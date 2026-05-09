@@ -1,0 +1,12 @@
+# Exclude generated/vendor files from language detection
+package-lock.json linguist-generated=true
+frontend/node_modules/** linguist-vendored=true
+frontend/build/** linguist-generated=true
+system/venv/** linguist-vendored=true
+java/target/** linguist-generated=true
+
+# Ensure all three primary languages are detected
+*.java linguist-detectable=true
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
+*.py linguist-detectable=true
